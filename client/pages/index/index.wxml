@@ -1,0 +1,13 @@
+<view class="index-container">
+  <view class="map">
+  <map id="map" controls="{{controls}}" markers='{{markers}}' bindmarkertap="handleMarkerTap" longitude="{{longitude}}" latitude="{{latitude}}" bindcontroltap="handleControlTap" scale="16" show-location></map>
+  </view>
+  <view class="tabbar">
+    <navigator url='/pages/publish/publish'>
+      <view class="publish">发布</view>
+    </navigator>
+    <navigator url='/pages/search/search'>
+      <view class="search">搜索</view>
+    </navigator>
+  </view>
+</view>

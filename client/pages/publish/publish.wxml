@@ -1,0 +1,49 @@
+<view class="pub-container" wx:if="{{!success}}">
+  <view class="item" bindtap="handleAddressTap">
+    <view class="label">我的地址</view>
+    <view class="info">{{address}}</view>
+  </view>
+
+  <view class="item">
+    <view class="label">类型</view>
+    <view class="info">
+      <radio-group bindchange="handleTypeChange" class="radio-group">
+        <label>
+          <radio value="buy" checked /> 求购
+        </label>
+        <label class="label-sell">
+          <radio value="sell" /> 转让
+        </label>
+      </radio-group>
+    </view>
+  </view>
+
+  <view class="item">
+    <view class="label">说明</view>
+    <view class="info">
+      <input bindinput="handleMessageInput" placeholder='请输入说明'></input>
+    </view>
+  </view>
+
+  <view class="item">
+    <view class="label">联系方式</view>
+    <view class="info">
+      <input bindinput="handleContactInput" placeholder='请输入联系方式'></input>
+    </view>
+  </view>
+
+  <view class="button" bindtap="handleSubmit">
+    <button type="primary">提交</button>
+  </view>
+</view>
+
+<view class="success" wx:if="{{success}}">
+  <view>
+    <icon type="success" size="40" /> 恭喜你，数据提交成功~
+  </view>
+  
+  <view class="button" bindtap="handleBackTap">
+    <button type="primary">返回</button>
+  </view>
+  
+</view>

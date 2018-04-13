@@ -1,0 +1,15 @@
+.detail-container {
+  height: 100%;
+}
+
+.detail-container view {
+  padding: 36rpx 20rpx;
+  border-bottom: 1px solid #ccc;
+  color: #999;
+  font-weight: 100;
+}
+
+.detail-container image {
+  width: 60rpx;
+  height: 60rpx;
+}

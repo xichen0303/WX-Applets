@@ -1,0 +1,15 @@
+<view class="detail-container">
+  <view>
+    {{d.address}}
+  </view>
+  <view wx:if="{{d.type}}">
+    <image src='/resources/{{d.type}}.png'></image>
+    {{d.type == 'sell' ? '转让' : '求购'}}
+  </view>
+  <view>
+    {{d.message}}
+  </view>
+  <view>
+    {{d.contact}}
+  </view>
+</view>

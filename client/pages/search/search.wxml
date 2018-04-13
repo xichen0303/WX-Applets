@@ -1,0 +1,14 @@
+<view class="search-container">
+  <view>
+    <view>
+      <input bindinput="handleSeachInput" placeholder='请输入关键字'></input>
+    </view>
+    <view bindtap="handleSubmitTap">搜索</view>
+  </view>
+  <scroll-view scroll-y>
+    <view data-id="{{item.id}}" bindtap="handleItemTap" wx:for="{{list}}" wx:key="{{item.id}}" class="list">
+      <view>{{item.province}}-{{item.city}}-{{item.district}}（{{item.type == 'sell' ? '转让': '求购'}}）</view>
+      <view>{{item.message}}</view>
+    </view>
+  </scroll-view>
+</view>

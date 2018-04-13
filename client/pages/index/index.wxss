@@ -1,0 +1,40 @@
+.index-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.map {
+  flex: 1;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.tabbar {
+  height: 88rpx;
+  display: flex;
+}
+
+.tabbar view {
+  flex: 1;
+  font-size: 32rpx;
+  font-weight: 100;
+  text-align: center;
+  line-height: 88rpx;
+  color: white;
+}
+
+.tabbar .publish {
+  background: #ff9700;
+}
+
+.tabbar .search {
+  background: #03bbd5;
+}
+
+navigator {
+  flex: 1
+}
